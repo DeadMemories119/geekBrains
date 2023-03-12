@@ -5,10 +5,10 @@
 // a = -9 b = -3 -> max = -3
 
 
-// Console.WriteLine("Input first number");
+// Console.WriteLine("Input the first number");
 // int num1 = Convert.ToInt32(Console.ReadLine());
 
-// Console.WriteLine("Input second number");
+// Console.WriteLine("Input the second number");
 // int num2 = Convert.ToInt32(Console.ReadLine());
 
 // if (num1 > num2)
@@ -16,6 +16,12 @@
 
 // if (num2 > num1)
 // Console.WriteLine($"{num2} is the bigger than {num1}");
+
+// else
+// {
+// Console.WriteLine($"{num1} and {num2} are equal");
+// }
+
 
 
 // Задача 4: Напишите программу, которая принимает на вход три числа
@@ -33,20 +39,17 @@
 // Console.WriteLine("Input third number");
 // int num3 = Convert.ToInt32(Console.ReadLine());
 
-// var max = num1;
+// int max = num1;
 
-// if (num2 > num1) 
+// if (num2 > max)
 // {
-// int max = num2;
+//     max = num2;
 // }
 
 // if (num3 > max)
 // {
-// int max = num3;
+//     max = num3;
 // }
-
-// // почему не даёт воспользоваться переменной max в условии?
-// // ни var, ни int ничего не меняют 
 
 // Console.WriteLine($"{max} is the biggest number");
 
@@ -59,14 +62,14 @@
 // Console.WriteLine("Input a number");
 // int number = Convert.ToInt32(Console.ReadLine());
 
-// if (number % 2 = 0)
+// if (number % 2 == 0)
 //  {
-// Console.WriteLine($"{number} is even number");
+// Console.WriteLine($"{number} is an even number");
 // }
 
-// if (number % 2 = 1)
+// if (number % 2 == 1)
 //  {
-// Console.WriteLine($"{number} is not even number");
+// Console.WriteLine($"{number} is not an even number");
 // }
 
 // Задача 8: Напишите программу, которая на вход принимает число (N),
@@ -80,7 +83,7 @@
 
 // while (count >= number) 
 // {
-//     if (count % 2 = 0) 
+//     if (count % 2 == 0) 
 //     {
 //         Console.WriteLine($" {count} ");
 //     }
