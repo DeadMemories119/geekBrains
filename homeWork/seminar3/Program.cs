@@ -1,28 +1,4 @@
-﻿
-// string neurotransmittersText = "What are neurotransmitters? Neurotransmitters"
-//   + "are chemical messengers that your body can't function without."
-//   + "Their job is to carry chemical signals (“messages”) from one neuron"
-//   + "(nerve cell) to the next target cell.";
-
-//   string Replace(string text, char oldValue, char newValue)
-//   {
-//     string result = string.Empty;
-//     int length = text.Length;
-
-// for (int i = 0; i < length; i ++)
-// {
-// if (text[i] == oldValue) result += newValue;
-// else result += text[i];
-// }
-// return result;
-//   }
-
-// string newText = Replace(neurotransmittersText,'o','0');
-// Console.WriteLine($"{newText}");
-
-
-
-// Задача 19
+﻿// Задача 19
 // Напишите программу, которая принимает на вход пятизначное число 
 // и проверяет, является ли оно палиндромом.
 // 14212 -> нет
