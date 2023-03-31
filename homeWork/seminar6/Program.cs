@@ -79,29 +79,29 @@
 // значения b1, k1, b2 и k2 задаются пользователем.
 // b1 = 2, b2 = 4, k1 = 5, k2 = 9 -> (-0,5; -0,5)
 
-void FindLineIntersectionPoint()
-{
-    Console.WriteLine("Enter the values for b1, b2, k1, k2: ");
-    string b1 = Console.ReadLine();
-    string b2 = Console.ReadLine();
-    string k1 = Console.ReadLine();
-    string k2 = Console.ReadLine();
+// void FindLineIntersectionPoint()
+// {
+//     Console.WriteLine("Enter the values for b1, b2, k1, k2: ");
+//     string b1 = Console.ReadLine();
+//     string b2 = Console.ReadLine();
+//     string k1 = Console.ReadLine();
+//     string k2 = Console.ReadLine();
 
-    if (!string.IsNullOrEmpty(b1) && !string.IsNullOrEmpty(b2) &&
-        !string.IsNullOrEmpty(k1) && !string.IsNullOrEmpty(k2))
+//     if (!string.IsNullOrEmpty(b1) && !string.IsNullOrEmpty(b2) &&
+//         !string.IsNullOrEmpty(k1) && !string.IsNullOrEmpty(k2))
 
-    {
-        double x = (double.Parse(b2) - double.Parse(b1)) / (double.Parse(k1) - double.Parse(k2));
-        double y1 = double.Parse(k1) * x + double.Parse(b1);
-        double y2 = double.Parse(k2) * x + double.Parse(b2);
-        Console.WriteLine($"The intersection point is ({y1:F2} ; {y2:F2})");
-    }
-    else
-    {
-        Console.WriteLine("Input cannot be null");
-    }
+//     {
+//         double x = (double.Parse(b2) - double.Parse(b1)) / (double.Parse(k1) - double.Parse(k2));
+//         double y1 = double.Parse(k1) * x + double.Parse(b1);
+//         double y2 = double.Parse(k2) * x + double.Parse(b2);
+//         Console.WriteLine($"The intersection point is ({y1:F2} ; {y2:F2})");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Input cannot be null");
+//     }
 
-}
+// }
 
-FindLineIntersectionPoint();
+// FindLineIntersectionPoint();
 
