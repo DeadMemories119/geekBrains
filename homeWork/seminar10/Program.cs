@@ -33,7 +33,14 @@ string[] ShrinkStringArray(string[] array)
     for (int i = 0; i < length; i++)
     {
        int index = random.Next(0,array.Length);
-        newArray[i] = array[index];
+       if (newArray.Contains(array[index]) && newArray[i] != null)
+       {
+        i--;
+       }
+        else
+        {
+            newArray[i] = array[index];
+        }
     }
     return newArray;
 }
