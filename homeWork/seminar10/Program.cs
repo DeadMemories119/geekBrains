@@ -24,6 +24,22 @@ string[] CreateRandomStringArray(int size, int maxLength)
     return array;
 }
 
-string[] newArray = CreateRandomStringArray(4,5);
-Console.WriteLine(String.Join(",", newArray));
+string[] ShrinkStringArray(string[] array)
+{
+    Random random = new Random();
+    int length = random.Next(0,3);
+    string[] newArray = new string[length];
+   
+    for (int i = 0; i < length; i++)
+    {
+       int index = random.Next(0,array.Length);
+        newArray[i] = array[index];
+    }
+    return newArray;
+}
 
+string[] regularStringArray = CreateRandomStringArray(4,5);
+Console.WriteLine(String.Join(",", regularStringArray));
+
+string[] shrinkedStringArray = ShrinkStringArray(regularStringArray);
+Console.WriteLine(String.Join(",", shrinkedStringArray));
